@@ -1,0 +1,8 @@
+# XCOM 单条发送测试命令
+# 按以下顺序逐条发送，每次发送一行。
+PING
+LIST
+GET temp_x10
+SET alarm_limit 280
+GET alarm
+SET beep_en 0
