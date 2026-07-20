@@ -44,7 +44,7 @@
 最终演示工程路径为：
 
 ```text
-02_固件代码/RuntimeMonitor_Final/Projects/MDK-ARM/atk_f103_nolcd.uvprojx
+02_固件代码/RuntimeMonitor/Projects/MDK-ARM/atk_f103_nolcd.uvprojx
 ```
 
 该工程为最终 no-LCD 演示版本，已验证可完成 USART 在线变量监控、GET/SET 在线调参、LED 报警、蜂鸣器报警和 KEY 驱动接入。
@@ -87,7 +87,7 @@ README_串口调试说明.md
 1. 使用 Keil uVision5 打开：
 
 ```text
-02_固件代码/RuntimeMonitor_Final/Projects/MDK-ARM/atk_f103_nolcd.uvprojx
+02_固件代码/RuntimeMonitor/Projects/MDK-ARM/atk_f103_nolcd.uvprojx
 ```
 
 2. 执行：
@@ -157,7 +157,13 @@ atk_f103_nolcd.uvprojx
 
 该版本保留了项目核心功能：USART 在线变量监控、`PING / LIST / GET / SET` 协议命令、LED 报警反馈、蜂鸣器报警反馈和 KEY 驱动接入。LCD 接口在软件结构中作为预留接口说明，但最终演示版本未启用 LCD 显示。
 
-## 8. 最终结论
+## 8. GitHub 归档说明
+
+本仓库以根目录中的 `01_报告` 至 `06_提交说明` 和 `02_固件代码/RuntimeMonitor` 作为维护中的主版本。
+
+根目录中的 `24363038李承鸿嵌入式课程期末设计报告` 文件夹及同名 `.zip` 文件为课程提交时保留的归档副本，其中的固件内容与主版本一致。日常查看、修改和复现实验时，请使用上述主版本目录，避免在归档副本与主版本之间产生混淆。
+
+## 9. 最终结论
 
 本项目实现了一个基于 USART 的运行时变量监控与在线调参系统。PC 端通过 XCOM 发送文本命令，在 STM32 程序持续运行过程中读取变量、修改参数，并通过 LED 与蜂鸣器观察参数修改对系统状态的实时影响。
 

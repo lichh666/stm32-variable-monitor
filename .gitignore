@@ -1,0 +1,14 @@
+# Keil MDK build outputs
+Objects/
+Listings/
+*.axf
+*.hex
+*.bin
+*.o
+*.d
+*.lst
+*.map
+
+# Keil temporary and user-specific files
+*.bak
+*.uvguix.*
